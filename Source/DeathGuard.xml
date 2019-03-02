@@ -1,0 +1,135 @@
+<army>
+    <knowCharacters>
+        <character id="kaleb_arin">
+            <name>Kaleb Arin</name>
+            <grade>Housecarl</grade>
+            <company>7</company>
+        </character>
+        <character id="blathlok">
+            <name>Blathlok the Putrid</name>
+            <grade>Sorcerer</grade>
+        </character>
+        <character id="blight_stalker">
+            <name>Blight Stalker</name>
+            <grade>Plague Brethren</grade>
+        </character>
+        <character id="pestus_bloagh">
+            <name>Pestus Bloagh</name>
+            <grade>Malignant Plaguecaster</grade>
+        </character>
+    </knowCharacters>
+    <units>
+        <unit id="daemon_prince_of_nurgle">
+            <name>Daemon Prince of Nurgle</name>
+            <power>8</power>
+        </unit>
+        <unit id="typhus">
+            <name>Typhus</name>
+            <power>9</power>
+        </unit>
+        <unit id="lord_of_contagion">
+            <name>Lord of Contagion</name>
+            <power>7</power>
+        </unit>
+        <unit id="chaos_lord">
+            <name>Chaos Lord</name>
+            <power>5</power>
+        </unit>
+        <unit id="chaos_lord_terminator">
+            <name>Chaos Lord in Terminator Armour</name>
+            <power>6</power>
+        </unit>
+        <unit id="sorcerer">
+            <name>Sorcerer</name>
+            <power>6</power>
+        </unit>
+        <unit id="sorcerer_terminator">
+            <name>Sorcerer in Terminator Armour</name>
+            <power>8</power>
+        </unit>
+        <unit id="malignant_plaguecaster">
+            <name>Malignant Plaguecaster</name>
+            <power>6</power>
+        </unit>
+        <unit id="plague_marines">
+            <name>Plague Marines</name>
+            <power>7</power>
+        </unit>
+        <unit id="chaos_cultists">
+            <name>Chaos Cultists</name>
+            <power>3</power>
+        </unit>
+        <unit id="poxwalkers">
+            <name>Poxwalkers</name>
+            <power>3</power>
+        </unit>
+        <unit id="plaguebears">
+            <name>Plaguebears</name>
+            <power>4</power>
+        </unit>
+        <unit id="nurglings">
+            <name>Nurglings</name>
+            <power>3</power>
+        </unit>
+        <unit id="noxious_blightbringer">
+            <name>Noxious Blightbringer</name>
+            <power>4</power>
+        </unit>
+        <unit id="foul_blightspawn">
+            <name>Foul Blightspawn</name>
+            <power>4</power>
+        </unit>
+        <unit id="biologus_putrifier">
+            <name>Biologus Putrifier</name>
+            <power>4</power>
+        </unit>
+        <unit id="plague_surgeon">
+            <name>Plague Surgeon</name>
+            <power>4</power>
+        </unit>
+        <unit id="tallyman">
+            <name>Tallyman</name>
+            <power>4</power>
+        </unit>
+        <unit id="deathshroud_terminators">
+            <name>Deathshroud Terminators</name>
+            <power>11</power>
+        </unit>
+        <unit id="blightlord_terminators">
+            <name>Blightlord Terminators</name>
+            <power>14</power>
+        </unit>
+        <unit id="helbrute">
+            <name>Helbrute</name>
+            <power>7</power>
+        </unit>
+        <unit id="beasts of nurgle">
+            <name>Beasts of nurgle</name>
+            <power>2</power>
+        </unit>
+        <unit id="possessed">
+            <name>Possessed</name>
+            <power>6</power>
+        </unit>
+        <unit id="foetid_bloat_drone">
+            <name>Foetid Bloat-drone</name>
+            <power>8 </power>
+        </unit>
+    </units>
+    <prefixes>
+        <prefix>bla</prefix>
+        <prefix>bli</prefix>
+        <prefix>da</prefix>
+        <prefix>ta</prefix>
+        <prefix>ti</prefix>
+        <prefix>rhu</prefix>
+    </prefixes>
+    <suffixes>
+        <suffix>bhan</suffix>
+        <suffix>bhee</suffix>
+        <suffix>hor</suffix>
+        <suffix>khar</suffix>
+        <suffix>mort</suffix>
+        <suffix>vile</suffix>
+    </suffixes>
+</army>
