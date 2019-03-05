@@ -4,19 +4,30 @@ import xml.etree.ElementTree as ET
 
 class NameGenerator:
     def __init__(self, path, source, file):
-        self.__version = "0.0.1"
+        self.__version = "0.0.2"
         self.__path = path 
         self.__source_path = self.__get_full_file_path(path, source)
         self.__file = file 
         self.__prefixes = [] 
         self.__suffixes = [] 
+        self.__middles = [] 
+        self.__combinations = []
         self.__load_main_xml(self.__source_path, file)
 
     def generate_name(self):
         random.random()
-        pre = self.__prefixes[random.randint(0, len(self.__prefixes)-1)].get_text()
-        suf = self.__suffixes[random.randint(0, len(self.__suffixes)-1)].get_text()
-        return pre + suf
+        name = ""
+        con = self.__combinations[random.randint(0, len(self.__combinations)-1)]
+
+        for c in con.get_order():
+            if(c == "prefix"):
+                name = name + self.__prefixes[random.randint(0, len(self.__prefixes)-1)].get_text()
+            elif(c == "suffix"):
+                name = name + self.__suffixes[random.randint(0, len(self.__suffixes)-1)].get_text()
+            elif(c == "middle"):
+                name = name + self.__middles[random.randint(0, len(self.__middles)-1)].get_text()
+
+        return name
 
 
     def __load_main_xml(self, path, file):
@@ -30,12 +41,35 @@ class NameGenerator:
             r = Radical(pre.text)
             self.__prefixes.append(r)
 
-        for pre in root.findall("./suffixes/suffix"):
-            r = Radical(pre.text)
+        for suf in root.findall("./suffixes/suffix"):
+            r = Radical(suf.text)
             self.__suffixes.append(r)
+
+        for mid in root.findall("./middles/middle"):
+            r = Radical(mid.text)
+            self.__middles.append(r)
+
+        for con in root.findall("./combinations/combination"):
+            c = Combination(con)
+            self.__combinations.append(c)
+            
 
     def __get_full_file_path(self, path, file):
         return os.path.join(path, file)
+
+class Combination:
+    def __init__(self, xml):
+        self.__order = []
+        for r in xml:
+            if(r.tag == "prefix"):
+                self.__order.append("prefix")
+            elif(r.tag == "suffix"):
+                self.__order.append("suffix")
+            elif(r.tag == "middle"):
+                self.__order.append("middle")
+
+    def get_order(self):
+        return self.__order 
 
 class Radical:
     def __init__(self, text):

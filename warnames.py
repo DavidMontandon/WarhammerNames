@@ -9,6 +9,7 @@ def main(argv):
     print(gen.generate_name())
     print(gen.generate_name())
     print(gen.generate_name())
+    print(gen.generate_name())
 
 if __name__ == "__main__":
     main(sys.argv[1:])  

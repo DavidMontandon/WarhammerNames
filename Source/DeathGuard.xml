@@ -119,17 +119,65 @@
     <prefixes>
         <prefix>bla</prefix>
         <prefix>bli</prefix>
+        <prefix>co</prefix>
         <prefix>da</prefix>
-        <prefix>ta</prefix>
-        <prefix>ti</prefix>
+        <prefix>hal</prefix>
+        <prefix>gul</prefix>
+        <prefix>gur</prefix>
+        <prefix>hal</prefix>
+        <prefix>hu</prefix>
+        <prefix>ko</prefix>
+        <prefix>necro</prefix>
+        <prefix>plague</prefix>
         <prefix>rhu</prefix>
+        <prefix>ta</prefix>
+        <prefix>tah</prefix>
+        <prefix>ti</prefix>
+        <prefix>uji</prefix>
     </prefixes>
     <suffixes>
         <suffix>bhan</suffix>
         <suffix>bhee</suffix>
+        <suffix>don</suffix>
+        <suffix>goth</suffix>
+        <suffix>hor</suffix>
         <suffix>hor</suffix>
         <suffix>khar</suffix>
+        <suffix>kheigh</suffix>
+        <suffix>la</suffix>
+        <suffix>loch</suffix>
         <suffix>mort</suffix>
+        <suffix>thrax</suffix>
         <suffix>vile</suffix>
+        <prefix>oj</prefix>
     </suffixes>
+    <middles>
+        <middle>'</middle>
+        <middle>-</middle>
+        <middle> </middle>
+    </middles>
+    <combinations>
+        <combination>
+            <prefix>1</prefix>
+            <prefix>1</prefix>
+            <suffix>1</suffix>
+        </combination>
+        <combination>
+            <prefix>1</prefix>
+            <suffix>1</suffix>
+        </combination>
+        <combination>
+            <prefix>1</prefix>
+            <suffix>1</suffix>
+            <middle>1</middle>
+            <suffix>1</suffix>
+        </combination>
+        <combination>
+            <prefix>1</prefix>
+            <suffix>1</suffix>
+            <middle>1</middle>
+            <prefix>1</prefix>
+            <suffix>1</suffix>
+        </combination>
+    </combinations>
 </army>
