@@ -4,7 +4,7 @@
 
 This application will create random names for your figurines.
 
-![Screenshot](sample.jpg)  
+![Screenshot](sample.jpeg)  
 ![Screenshot](names.png)  
 
 ## What you need to make it work :  
