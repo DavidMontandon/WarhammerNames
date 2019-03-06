@@ -1,12 +1,11 @@
-import os
 import random
+import os
 import xml.etree.ElementTree as ET
 
 class NameGenerator:
-    def __init__(self, path, source, file):
-        self.__version = "0.0.2"
-        self.__path = path 
-        self.__source_path = self.__get_full_file_path(path, source)
+    def __init__(self, source, file):
+        self.__version = "0.0.3"
+        self.__source_path = source
         self.__file = file 
         self.__prefixes = [] 
         self.__suffixes = [] 
@@ -31,7 +30,7 @@ class NameGenerator:
 
 
     def __load_main_xml(self, path, file):
-        xml_file_name = self.__get_full_file_path(path, file)
+        xml_file_name = os.path.join(path, file)
         with open(xml_file_name, "r") as xml_file:
             tree =  ET.parse(xml_file)
 
@@ -53,10 +52,6 @@ class NameGenerator:
             c = Combination(con)
             self.__combinations.append(c)
             
-
-    def __get_full_file_path(self, path, file):
-        return os.path.join(path, file)
-
 class Combination:
     def __init__(self, xml):
         self.__order = []
