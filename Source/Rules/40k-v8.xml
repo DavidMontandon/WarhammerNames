@@ -1,0 +1,166 @@
+<detachments>
+    <detachment name="Patrol">
+        <require type="HQ">
+            <mininal>1</mininal>
+            <maximal>2</maximal>
+        </require>
+        <require type="Troop">
+            <mininal>1</mininal>
+            <maximal>3</maximal>
+        </require>
+        <optional type="Elite,Fast,Heavy,Flyer">
+            <mininal>0</mininal>
+            <maximal>2</maximal>
+        </optional>
+        <cp>1</cp>
+    </detachment>
+    <detachment name="Battalion">
+        <require type="HQ">
+            <mininal>2</mininal>
+            <maximal>3</maximal>
+        </require>
+        <require type="Troop">
+            <mininal>3</mininal>
+            <maximal>6</maximal>
+        </require>
+        <optional type="Elite">
+            <mininal>0</mininal>
+            <maximal>6</maximal>
+        </optional>
+        <optional type="Fast,Heavy">
+            <mininal>0</mininal>
+            <maximal>3</maximal>
+        </optional>
+        <optional type="Flyer">
+            <mininal>0</mininal>
+            <maximal>2</maximal>
+        </optional>
+        <cp>3</cp>
+    </detachment>
+    <detachment name="Brigade">
+        <require type="HQ">
+            <mininal>3</mininal>
+            <maximal>5</maximal>
+        </require>
+        <require type="Troop">
+            <mininal>6</mininal>
+            <maximal>12</maximal>
+        </require>
+        <optional type="Elite">
+            <mininal>3</mininal>
+            <maximal>8</maximal>
+        </optional>
+        <optional type="Fast,Heavy">
+            <mininal>3</mininal>
+            <maximal>5</maximal>
+        </optional>
+        <optional type="Flyer">
+            <mininal>0</mininal>
+            <maximal>2</maximal>
+        </optional>
+        <cp>9</cp>
+    </detachment>
+    <detachment name="Vanguard">
+        <require type="HQ">
+            <mininal>1</mininal>
+            <maximal>2</maximal>
+        </require>
+        <optional type="Elite">
+            <mininal>3</mininal>
+            <maximal>6</maximal>
+        </optional>
+        <optional type="Fast,Heavy,Flyer">
+            <mininal>0</mininal>
+            <maximal>2</maximal>
+        </optional>
+        <optional type="Troop">
+            <mininal>0</mininal>
+            <maximal>3</maximal>
+        </optional>
+        <cp>1</cp>
+    </detachment>
+    <detachment name="Spearhead Detachment">
+        <require type="HQ">
+            <mininal>1</mininal>
+            <maximal>2</maximal>
+        </require>
+        <optional type="Heavy">
+            <mininal>3</mininal>
+            <maximal>6</maximal>
+        </optional>
+        <optional type="Fast,Elite,Flyer">
+            <mininal>0</mininal>
+            <maximal>2</maximal>
+        </optional>
+        <optional type="Troop">
+            <mininal>0</mininal>
+            <maximal>3</maximal>
+        </optional>
+        <cp>1</cp>
+    </detachment>
+    <detachment name="Outrider Detachment">
+        <require type="HQ">
+            <mininal>1</mininal>
+            <maximal>2</maximal>
+        </require>
+        <optional type="Fast">
+            <mininal>3</mininal>
+            <maximal>6</maximal>
+        </optional>
+        <optional type="Heavy,Elite,Flyer">
+            <mininal>0</mininal>
+            <maximal>2</maximal>
+        </optional>
+        <optional type="Troop">
+            <mininal>0</mininal>
+            <maximal>3</maximal>
+        </optional>
+        <cp>1</cp>
+    </detachment>
+    <detachment name="Supreme Command">
+        <require type="HQ">
+            <mininal>3</mininal>
+            <maximal>5</maximal>
+        </require>
+        <optional type="Elite,LoW">
+            <mininal>0</mininal>
+            <maximal>1</maximal>
+        </optional>
+        <cp>1</cp>
+    </detachment>
+    <detachment name="Super-Heavy">
+        <require type="LoW">
+            <mininal>3</mininal>
+            <maximal>5</maximal>
+        </require>
+        <cp>3</cp>
+    </detachment>
+    <detachment name="Air Wing">
+        <require type="Flyer">
+            <mininal>3</mininal>
+            <maximal>5</maximal>
+        </require>
+        <cp>1</cp>
+    </detachment>
+    <detachment name="Super-Heavy Auxiliary">
+        <require type="LoW">
+            <mininal>1</mininal>
+            <maximal>1</maximal>
+        </require>
+        <cp>0</cp>
+    </detachment>
+    <detachment name="Fortification Network">
+        <require type="Fortification">
+            <mininal>1</mininal>
+            <maximal>3</maximal>
+        </require>
+        <cp>0</cp>
+    </detachment>
+    <detachment name="Auxiliary Support">
+        <require type="HQ,Troop,Elite,Fast,Heavy,Flyer,Transport">
+            <mininal>1</mininal>
+            <maximal>1</maximal>
+        </require>
+        <cp>-1</cp>
+    </detachment>
+</detachments>

@@ -28,7 +28,6 @@ class NameGenerator:
 
         return name
 
-
     def __load_main_xml(self, path, file):
         xml_file_name = os.path.join(path, file)
         with open(xml_file_name, "r") as xml_file:
